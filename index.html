@@ -24,11 +24,17 @@
             </select>
             </div>
             <div id="navCart" class="navCart">
-                <button class="btnCart" style="border: solid 1px #99ccff;"><img src="./img/Cart.png" alt="cart" width="80%"></button>
+                <button class="btnCart" style="border: solid 1px #99ccff;" onclick="openCart()">  
+                    <div id="counter" class="counter">
+                        0
+                    </div>
+                    <img src="./img/Cart.png" alt="cart" width="80%">
+                </button>
             </div>
         </nav>
     </div>
     <div id="mainContent" class="mainContent"> 
     </div>
+    <div id="carrello" class="carrello"><button onclick="closeCart()">X</button></div>
 </body>
 </html>

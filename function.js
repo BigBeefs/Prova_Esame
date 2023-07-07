@@ -23,7 +23,6 @@ async function insertCardPortatili(value){
         let title = product[j]["title"]
         let img = product[j]["img"]
         let price= product[j]["price"]
-        console.log(title)
         
         let article = document.createElement('article')
         
@@ -46,8 +45,18 @@ async function insertCardPortatili(value){
         heart.innerHTML='<button class="btnHeart"><img src="./img/Heart.png" alt="heart" width="50%"></button>'
         let cart=document.createElement('div')
         cart.className='cart'
-        cart.innerHTML='<button class="btnCart"><img src="./img/Cart.png" alt="cart" width="50%"></button>'
         
+        let btnCart = document.createElement('button')
+        btnCart.className="btnCart"
+        btnCart.id=j
+        btnCart.setAttribute("onClick","addCart(this.id)")
+        let image = document.createElement('img')
+        image.src="./img/Cart.png"
+        image.alt="cart"
+        image.setAttribute("width","50%")
+
+        btnCart.appendChild(image)
+        cart.appendChild(btnCart)
         buttonCard.appendChild(heart)
         buttonCard.appendChild(cart)
         article.appendChild(divImg)
@@ -94,6 +103,58 @@ async function importData(){
     
 }
 
+var cart = []
 
+async function addCart(id){
+    let data = await importData()
+    
+    
+    let counterAppend = document.getElementById('counter')
+    let category = document.getElementById('Filter').value
+    let cartDiv = document.getElementById('carrello')
+
+    let item ={
+        category:category,
+        id:id
+    }
+    cart.push(item)
+    counterAppend.innerHTML=cart.length
+    
+    let product = data[category]
+    
+    let img = product[id]["img"]
+    let title = product[id]["title"]
+    let price = product[id]["price"]
+
+    let div = document.createElement('div')
+    div.id='contCart'
+    div.className='contCart'
+
+    let divImg = document.createElement('div')
+    divImg.className='image'
+    divImg.innerHTML='<img src="'+img+'" alt="image" width="80%">'
+
+    let divTitle = document.createElement('div')
+    divTitle.className='cardTitle'
+    divTitle.innerHTML='<p>'+title+'</p>'
+
+    let divPrice = document.createElement('div')
+    divPrice.className='price'
+    divPrice.innerHTML='<p class="priceValue">'+price+'</p>'
+
+    div.appendChild(divImg)
+    div.appendChild(divTitle)
+    divImg.appendChild(divPrice)
+
+    cartDiv.appendChild(div)
+}
+
+function openCart(){
+    document.getElementById('carrello').style.display='flex'
+}
+
+function closeCart(){
+    document.getElementById('carrello').style.display='none'
+}
 
 
