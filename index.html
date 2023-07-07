@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="function.js"></script>
+    <title>Meglio Usato che Nuovo</title>
+</head>
+<body>
+    <header> 
+        <label class="title">Meglio Usato che Nuovo</label>
+        <img src="./img/Logo.png" alt="Logo" width="28px"> 
+    </header>
+
+    <div class="NavBar"> 
+        <nav class="navCont">
+            <div id="select" class="select">
+            <select name="Filter" class="Filter" id="Filter" onchange="watchSelect()">
+                <option value="" selected disabled>Seleziona Categoria</option>
+                <option value="portatili">Computer Portatili</option>
+                <option value="fissi">Computer Fissi</option>
+                <option value="smartphone">Smartphone</option>
+            </select>
+            </div>
+            <div id="navCart" class="navCart">
+                <button class="btnCart" style="border: solid 1px #99ccff;"><img src="./img/Cart.png" alt="cart" width="80%"></button>
+            </div>
+        </nav>
+    </div>
+    <div id="mainContent" class="mainContent"> 
+    </div>
+</body>
+</html>

@@ -1,0 +1,132 @@
+header{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    justify-content: space-between;
+    background-color: #99ccff;
+    border-radius: 5px 5px 0px 0px;
+    color: rgb(111, 148, 252);
+    
+}
+
+.title{
+    font-size: x-large;
+}
+
+.NavBar{
+    background-color: #99ccff;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: white;
+    
+}
+
+.navCont{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.select{
+    width: 95%;
+    left: 0;
+}
+
+.navCart{
+    width: 5%;
+    right: 0;   
+}
+
+.Filter{
+    color: rgb(111, 148, 252);
+    background-color: #99ccff;
+    border: solid 1px #99ccff;
+    font-size: large;
+    margin-top: 10px;
+}
+
+.mainContent{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.card{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    width: 18%;
+    left: 0;
+    margin-top: 5vh;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    display: flex;
+    justify-content: space-around;
+    
+}
+
+article{
+    text-align: center;
+    position: relative;
+    height: 100%;
+}
+
+.image{
+    align-content: center;
+    text-align: center;
+}
+
+.cardTitle{
+    font-size: small;
+    color: #99ccff;
+}
+
+.price{
+    font-size: small;
+    text-align: center;
+    margin-bottom: 20%;
+
+}
+
+.priceTitle{
+    color: #99ccff;
+}
+
+.priceValue{
+    font-weight: bold;
+    font-size: medium;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: #CC5DE8;
+}
+
+.buttonCard{
+    width: 100%;
+    display: flex;
+    justify-content:  space-between;
+    bottom: 0;
+    position: absolute;
+}
+
+.heart{
+    width: 40%;
+    left: 0;
+}
+
+.cart{
+    width: 40%;
+    left: 0;
+}
+
+.btnHeart{
+    background: none;
+    border: solid 1px white;
+  
+    width: auto; height: auto;
+}
+
+.btnCart{
+    background: none;
+    border: solid 1px white;
+    width: auto; height: auto;
+}
+
+button:hover{
+    cursor: pointer;
+}
