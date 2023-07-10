@@ -12,7 +12,7 @@ async function insertCardPortatili(value){
     for (let i = 1; i < 6; i++) {
         let div = document.createElement('div')
         div.id=i
-        div.className="card"  
+        div.className="card"
         main.appendChild(div)
     }
     //Inserisco gli articoli all'interno di ogni div precendentemente creato
@@ -36,7 +36,7 @@ async function insertCardPortatili(value){
         
         let divPrice = document.createElement('div')
         divPrice.className='price'
-        divPrice.innerHTML='<p class="priceTitle">Compralo a</p><p class="priceValue">'+price+'</p>'
+        divPrice.innerHTML='<p class="priceTitle">Compralo a</p><p class="priceValue">$ '+price+'</p>'
         
         let buttonCard=document.createElement('div')
         buttonCard.className='buttonCard'
@@ -105,56 +105,98 @@ async function importData(){
 
 var cart = []
 
+
 async function addCart(id){
+    
     let data = await importData()
     
-    
     let counterAppend = document.getElementById('counter')
-    let category = document.getElementById('Filter').value
-    let cartDiv = document.getElementById('carrello')
+    let value = document.getElementById('Filter').value
+    let cartDiv = document.getElementById('cartDiv')
+    let totDiv = document.getElementById('tot')
 
-    let item ={
-        category:category,
-        id:id
-    }
-    cart.push(item)
-    counterAppend.innerHTML=cart.length
-    
-    let product = data[category]
+    let product = data[value]
     
     let img = product[id]["img"]
     let title = product[id]["title"]
     let price = product[id]["price"]
 
+    let item ={
+        id:id+value,
+        price:price
+    }
+    cart.push(item)
+  
+    counterAppend.innerHTML=cart.length
+
+    let sum=0.0
+
+    for (let i = 0; i < cart.length; i++) {
+        num= cart[i]['price']
+        sum += parseFloat(num)
+    }
+
     let div = document.createElement('div')
-    div.id='contCart'
+    div.id=id+value
     div.className='contCart'
 
     let divImg = document.createElement('div')
-    divImg.className='image'
-    divImg.innerHTML='<img src="'+img+'" alt="image" width="80%">'
+    divImg.className='imageCart'
+    divImg.innerHTML='<img src="'+img+'" alt="image" width="100%">'
 
     let divTitle = document.createElement('div')
-    divTitle.className='cardTitle'
-    divTitle.innerHTML='<p>'+title+'</p>'
+    divTitle.className='cardTitleCart'
+    divTitle.innerHTML=title
 
     let divPrice = document.createElement('div')
-    divPrice.className='price'
-    divPrice.innerHTML='<p class="priceValue">'+price+'</p>'
+    divPrice.className='priceCart'
+    divPrice.innerHTML='<p id="'+id+value+'price"" class="priceValue">$ '+price+'</p>'
+
+    let rmBtn = document.createElement('div')
+    rmBtn.className='divBtnCart'
+    rmBtn.innerHTML='<button id="'+id+value+'" class="rmBtn" onclick="removeArt(this.id)">Rimuovi</button>'
+
+    totDiv.innerHTML='<p>ToT. $'+sum.toFixed(2)+'</p>'
 
     div.appendChild(divImg)
     div.appendChild(divTitle)
-    divImg.appendChild(divPrice)
+    div.appendChild(divPrice)
+    div.appendChild(rmBtn)
 
     cartDiv.appendChild(div)
+
 }
 
 function openCart(){
-    document.getElementById('carrello').style.display='flex'
+    document.getElementById('carrello').style.display='inline'
 }
 
 function closeCart(){
     document.getElementById('carrello').style.display='none'
 }
 
+function removeArt(id){
+    cart.forEach((element,index) => {
+        
+        if ((element["id"])==id){
+            cart.splice(index, 1)
+            console.log(cart)
+        }
+    });
+    
+    let sum=0.0
+
+    for (let i = 0; i < cart.length; i++) {
+        num= cart[i]['price']
+        sum += parseFloat(num)
+    }
+    let counterAppend = document.getElementById('counter')
+    let totDiv = document.getElementById('tot')
+    totDiv.innerHTML='<p>ToT. $'+sum.toFixed(2)+'</p>'
+    counterAppend.innerHTML=cart.length
+    console.log(id)
+    document.getElementById(id+x).innerHTML=''
+    console.log(document.getElementById(id))
+    
+}
 

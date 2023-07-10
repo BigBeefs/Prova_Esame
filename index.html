@@ -16,15 +16,15 @@
     <div class="NavBar"> 
         <nav class="navCont">
             <div id="select" class="select">
-            <select name="Filter" class="Filter" id="Filter" onchange="watchSelect()">
-                <option value="" selected disabled>Seleziona Categoria</option>
-                <option value="portatili">Computer Portatili</option>
-                <option value="fissi">Computer Fissi</option>
-                <option value="smartphone">Smartphone</option>
-            </select>
+                <select name="Filter" class="Filter" id="Filter" onchange="watchSelect()">
+                    <option value="" selected disabled>Seleziona Categoria</option>
+                    <option value="portatili">Computer Portatili</option>
+                    <option value="fissi">Computer Fissi</option>
+                    <option value="smartphone">Smartphone</option>
+                </select>
             </div>
             <div id="navCart" class="navCart">
-                <button class="btnCart" style="border: solid 1px #99ccff;" onclick="openCart()">  
+                <button class="btnCart" style="border: solid 1px #99ccff;" onclick="openCart()">
                     <div id="counter" class="counter">
                         0
                     </div>
@@ -33,8 +33,18 @@
             </div>
         </nav>
     </div>
-    <div id="mainContent" class="mainContent"> 
+    <div id="mainContent" class="mainContent">
     </div>
-    <div id="carrello" class="carrello"><button onclick="closeCart()">X</button></div>
+
+    <div id="carrello" class="carrello">
+        <div class="cartDiv" id="cartDiv">
+            <button class="closeCart" onclick="closeCart()">X</button>
+            <div class="cartTitle">
+                Carrello
+            </div>
+            <div class="tot" id="tot"></div>
+        </div>
+        
+    </div>
 </body>
 </html>
