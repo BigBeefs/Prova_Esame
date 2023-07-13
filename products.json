@@ -1,0 +1,194 @@
+
+{
+    "portatili":{
+        "1":{
+            "title":"Apple MacBook Air 13 M1 8-core CPU 7-core GPU 256GB Grigio Siderale",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h33/h1d/33620895236126/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-c8284c71049d11cdbb3634a7ecacfcc7-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"999.00",
+            "sale":true,
+            "promo":100,
+            "id":"100",
+            "spec":{
+                "cpu":"M1 8-core",
+                "memory":"256GB",
+                "color":"Grigio Siderale"
+            }
+        },
+        "2":{
+            "title":"Lenovo IdeaPad 3 Notebook 15 Intel i5 16GB 512GB",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h7a/he0/34363072544798/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-295da6b87ff184896b6e3abeeeda48da-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"550.00",
+            "sale":false,
+            "id":"101",
+            "spec":{
+                "cpu":"Intel i5",
+                "memory":"512GB",
+                "color":"Grigio Siderale"
+            }
+        },
+        "3":{
+            "title":"ASUS VivoBook 16X M1603QA-MB046W 5600H WUXGA AMD Ryzen™ 5 8 GB DDR4-SDRAM 512 GB SSD",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h7b/h05/34650463109150/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-7ed6bf6148c02b57c793ee1ebdd34418-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"999.00",
+            "sale":false,
+            "id":"102",
+            "spec":{
+                "cpu":"AMD Ryzen™ 5",
+                "memory":"512GB",
+                "color":"Grigio Siderale"
+            }
+        },
+        "4":{
+            "title":"MSI Gaming GF63 Intel® Core™ i7 16 GB DDR4-SDRAM 1000 GB SSD NVIDIA GeForce RTX 4050 ",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h9d/hcd/34863402090526/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-738beed0a7f0fd9164d6f862baf965dc-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"1349.00",
+            "sale":false,
+            "id":"103",
+            "spec":{
+                "cpu":"Intel® Core™ i7",
+                "memory":"1000GB",
+                "color":"Grigio Siderale"
+            }
+        },
+        "5":{
+            "title":"HP Victus Gaming Laptop 15-fa0015nl i5-12500H Intel® Core™ i5 16 GB DDR4-SDRAM 512 GB SSD NVIDIA GeForce RTX 3050",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h51/h28/35084094767134/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-71270d87c76571451a3e37a151115ddf-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"999.00",
+            "sale":false,
+            "id":"104",
+            "spec":{
+                "cpu":"Intel® Core™ i5",
+                "memory":"512GB",
+                "color":"Grigio Siderale"
+            }
+        }
+    },
+
+    "fissi":{
+        "1":{
+            "title":"Lenovo Legion T7",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/hf4/h58/35175924891678/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-9bf58dc023fa13b157a89024d6a5ac8c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"3999.00",
+            "sale":true,
+            "promo":600,
+            "id":"200",
+            "spec":{
+                "cpu":"Intel i9",
+                "memory":"1000GB",
+                "color":"Nero"
+            }
+        },
+        "2":{
+            "title":"MSI MPG Infinite X2 13FNUF-054IT",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h94/h37/34789728092190/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-b64381671b92bcd6685f4357c6d256e6-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"3499.00",
+            "sale":false,
+            "id":"201",
+            "spec":{
+                "cpu":"Intel® Core™ i7",
+                "memory":"2000GB",
+                "color":"Nero"
+            }
+        },
+        "3":{
+            "title":"Apple Mac Studio M1",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h73/h21/33801071558686/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-bb9dd440db230898432465d568f2761c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"3899.99",
+            "sale":false,
+            "id":"202",
+            "spec":{
+                "cpu":"M1 Ultra",
+                "memory":"1000GB",
+                "color":"Grigio Siderale"
+            }
+        },
+        "4":{
+            "title":"MSI MEG Trident X 12VTF-205IT",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h69/hf4/33829888131102/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-74c8ed61c31a28ea7b47f608f3c50d3d-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"2999.00",
+            "sale":false,
+            "id":"203",
+            "spec":{
+                "cpu":"Intel® Core™ i7",
+                "memory":"2000GB",
+                "color":"Nero"
+            }
+        },
+        "5":{
+            "title":"Apple iMac 24",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h99/h2a/33249149354014/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-1b331e3b1fe0d758062beb9363b2e7a9-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"1289.00",
+            "sale":false,
+            "id":"204",
+            "spec":{
+                "cpu":"M1",
+                "memory":"256GB",
+                "color":"Blu"
+            }
+        }
+    },
+
+    "smartphone":{
+        "1":{
+            "title":"Samsung Galaxy Z Fold4",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h54/he1/34308915232798/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-cea5a13e8419e645d442bd321064d598-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"1349.00",
+            "sale":false,
+            "id":"300",
+            "spec":{
+                "cpu":"Snapdragon® 8 Gen 2.1",
+                "memory":"256GB",
+                "color":"Phantom Black"
+            }
+        },
+        "2":{
+            "title":"Samsung Galaxy S23+",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/hd0/h41/34936202461214/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-71167a7ac3daac981be698a4f76cf962-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"1099.00",
+            "sale":false,
+            "id":"301",
+            "spec":{
+                "cpu":"Snapdragon® 8 Gen 2.1",
+                "memory":"256GB",
+                "color":"Lavender"
+            }
+        },
+        "3":{
+            "title":"Apple iPhone 14 Pro Max",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h00/hda/34357211758622/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-a77efb5da66caf094027c33f5e4b817c-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"1299.00",
+            "sale":true,
+            "promo":100,
+            "id":"302",
+            "spec":{
+                "cpu":"A16",
+                "memory":"128GB",
+                "color":"Nero Siderale"
+            }
+        },
+        "4":{
+            "title":"Apple iPhone 13",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/ha8/h56/33038885158942/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-4ff79b6bc4071abaff1c863ea5243032-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"779.00",
+            "sale":false,
+            "id":"303",
+            "spec":{
+                "cpu":"A15",
+                "memory":"128GB",
+                "color":"Rosa"
+            }
+        },
+        "5":{
+            "title":"Honor Magic5 Lite ",
+            "img":"https://static1.unieuro.it/medias/sys_master/root/h53/h78/43986961989662/-api-rest-00ed29448a7522f610cac04d7b9ea7e0-assets-d93ccf931bbd4abfd55f7127499537eb-preview-sgmConversionBaseFormat-sgmProductFormat.jpg",
+            "price":"269.90",
+            "sale":false,
+            "id":"304",
+            "spec":{
+                "cpu":"ARM Cortex-A78+Cortex-A55",
+                "memory":"256GB",
+                "color":"Argento"
+            }
+        }
+    }
+}
