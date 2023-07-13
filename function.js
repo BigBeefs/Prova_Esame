@@ -4,9 +4,9 @@ async function importData(){
     await fetch('products.json')
     .then((response) => response.json())
     .then((json) => data = json);
-    return data
-    
+    return data 
 }
+
 async function innerElement(category){
     /**  Inserisco le card in base alla categoria scelta dalla select(category)*/
     
@@ -81,8 +81,9 @@ async function innerElement(category){
         article.appendChild(buttonCard)
         
         div.appendChild(article)
+    }
 }
-}
+
 function watchSelect(){
     /**In base alla categoria selezionata inserisco gli articoli */
 
@@ -112,15 +113,15 @@ var cart = []
 
 async function addCart(id){
     /**Aggiunge il prodotto selezionato tramite id del button(this.id) */
-
-    let data = await importData()
-    // importo i dati dal json in base al valore della category
-    let product = data[category] 
     
     let counterAppend = document.getElementById('counter')
     let category = document.getElementById('Filter').value
     let cartDiv = document.getElementById('cartDiv')
     let totDiv = document.getElementById('tot')
+
+    let data = await importData()
+    // importo i dati dal json in base al valore della category
+    let product = data[category] 
 
     let objLeng = Object.keys(product).length
     for (let i = 1; i <= objLeng; i++){
@@ -183,7 +184,7 @@ async function addCart(id){
                 let promo = product[i]["promo"]
                 divPrice.innerHTML='<p class="priceValue" style="text-decoration: line-through;">$ '+price+'</p><p class="priceValue">$ '+(price-promo).toFixed(2)+'</p>'
             }else{
-            divPrice.innerHTML='<p class="priceTitle">Compralo a</p><p class="priceValue">$ '+price+'</p>'
+            divPrice.innerHTML='<p class="priceValue">$ '+price+'</p>'
             }
 
             let rmBtn = document.createElement('div')
