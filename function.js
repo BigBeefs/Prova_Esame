@@ -1,6 +1,6 @@
 async function importData(){
     /**Importo i dati da product.json */
-    
+    //Prova
     await fetch('products.json')
     .then((response) => response.json())
     .then((json) => data = json);
